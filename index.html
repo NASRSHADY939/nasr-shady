@@ -36,13 +36,27 @@
 <section id="home" class="relative overflow-hidden py-24 md:py-32">
   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-10 items-center">
     <div data-aos="fade-up">
- <!-- صورة شخصية فوق الاسم -->
-<div class="flex justify-center mb-6" data-aos="zoom-in">
-  <img src="./nasr.jpg" 
-       alt="Nasr Shady portrait" 
+ <div class="flex justify-center mb-6" data-aos="zoom-in">
+  <img src="./nasr.jpg" alt="Nasr Shady portrait"
        class="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover border-4 border-slate-800 shadow-lg">
 </div>
+<div data-aos="fade-up">
+  <!-- Avatar with gradient ring + subtle float -->
+  <div class="group relative w-40 h-40 md:w-56 md:h-56 mx-auto mb-6
+              rounded-full p-[2px] bg-gradient-to-r from-sky-500 via-fuchsia-500 to-emerald-500
+              shadow-2xl animate-[float_6s_ease-in-out_infinite]">
+    <div class="rounded-full overflow-hidden bg-slate-900">
+      <img src="./nasr.jpg" alt="Nasr Shady portrait"
+           class="w-full h-full object-cover
+                  object-[50%_22%] 
+                  scale-[1.12] 
+                  transition-transform duration-700 group-hover:scale-[1.18]">
+    </div>
+  </div>
 
+  <p class="inline-flex items-center gap-2 ...">Available for freelance & contracts</p>
+  <h1 class="mt-5 text-4xl md:text-5xl font-extrabold tracking-tight">I'm <span class="text-sky-400">Nasr Shady</span></h1>
+  ...
 
       <p class="inline-flex items-center gap-2 text-xs font-semibold px-3 py-1 rounded-full bg-sky-500/10 text-sky-400 ring-1 ring-sky-500/30">Available for freelance & contracts</p>
       <h1 class="mt-5 text-4xl md:text-5xl font-extrabold tracking-tight">I'm <span class="text-sky-400">Nasr Shady</span></h1>
@@ -316,6 +330,7 @@
   </script>
 </body>
 </html>
+
 
 
 
