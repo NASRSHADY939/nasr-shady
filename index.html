@@ -7,13 +7,42 @@
   <meta name="description" content="Nasr Shady — Media Buyer & Growth Marketer. Paid ads across Meta, Google, TikTok, Snapchat, LinkedIn. Marketplace management for Amazon, Noon, Jumia. CRO & GA4 tracking." />
   <meta name="theme-color" content="#0f172a" />
   <link rel="icon" href="favicon.ico" />
+
+  <!-- CSS مخصص -->
+  <style>
+    html { scroll-behavior: smooth }
+
+    /* أنيميشن الطفو للصورة */
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    /* أنيميشن للـ buttons */
+    .btn-anim {
+      transition: all 0.3s ease;
+    }
+    .btn-anim:hover {
+      transform: scale(1.07);
+      box-shadow: 0 0 20px rgba(14, 165, 233, 0.6);
+    }
+  </style>
+
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- AOS (Animate On Scroll) CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
-  <style>html{scroll-behavior:smooth}</style>
 </head>
+
 <body class="bg-slate-900 text-slate-100 antialiased">
+
+  <!-- الصورة أعلى الموقع -->
+  <div class="flex justify-center py-6 bg-slate-900">
+    <img src="./nasr.jpg" alt="Nasr Shady portrait"
+         class="w-40 h-40 md:w-56 md:h-56 rounded-full object-cover shadow-2xl"
+         style="animation: float 6s ease-in-out infinite;">
+  </div>
+
   <!-- NAVBAR -->
   <header class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur border-b border-slate-800">
     <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
@@ -27,7 +56,9 @@
         <li><a href="#experience" class="hover:text-sky-400 transition">Experience</a></li>
         <li><a href="#contact" class="hover:text-sky-400 transition">Contact</a></li>
       </ul>
-      <a href="#contact" class="hidden md:inline-block px-4 py-2 rounded-xl bg-sky-500 text-white text-sm font-semibold hover:bg-sky-400 transition">Work with me</a>
+      <a href="#contact" class="btn-anim hidden md:inline-block px-4 py-2 rounded-xl bg-sky-500 text-white text-sm font-semibold">
+        Work with me
+      </a>
     </nav>
   </header>
 
@@ -35,291 +66,42 @@
     <!-- HERO -->
     <section id="home" class="relative overflow-hidden py-24 md:py-32">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-10 items-center">
-        <div data-aos="fade-up">
-          <p class="inline-flex items-center gap-2 text-xs font-semibold px-3 py-1 rounded-full bg-sky-500/10 text-sky-400 ring-1 ring-sky-500/30">Available for freelance & contracts</p>
-          <h1 class="mt-5 text-4xl md:text-5xl font-extrabold tracking-tight">I'm <span class="text-sky-400">Nasr Shady</span></h1>
-          <p class="mt-3 text-xl font-medium text-slate-300">Media Buyer & Growth Marketer</p>
-          <p class="mt-5 text-slate-400 leading-relaxed">I plan, launch, and scale paid campaigns across Meta, Google, TikTok, Snapchat, and LinkedIn. I optimize ROAS, reduce CPA, and ensure accurate tracking with GA4, Pixels, and CAPI. I also manage marketplace stores (Amazon, Noon, Jumia) and build high‑converting e‑commerce experiences.</p>
-          <div class="mt-8 flex flex-wrap gap-3">
-            <a href="#projects" class="px-5 py-3 rounded-xl bg-sky-500 text-white font-semibold hover:bg-sky-400 transition">View my work</a>
-            <a href="#contact" class="px-5 py-3 rounded-xl border border-slate-700 font-semibold hover:bg-slate-800 transition">Contact me</a>
+        <div data-aos="fade-up" class="space-y-5">
+
+          <p class="inline-flex items-center gap-2 text-xs font-semibold px-3 py-1 rounded-full bg-sky-500/10 text-sky-400 ring-1 ring-sky-500/30">
+            Available for freelance & contracts
+          </p>
+
+          <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight">
+            I'm <span class="text-sky-400">Nasr Shady</span>
+          </h1>
+
+          <p class="text-xl font-medium text-slate-300">Media Buyer & Growth Marketer</p>
+
+          <p class="text-slate-400 leading-relaxed">
+            I plan, launch, and scale paid campaigns across Meta, Google, TikTok, Snapchat, and LinkedIn.
+            I optimize ROAS, reduce CPA, and ensure accurate tracking with GA4, Pixels, and CAPI.
+            I also manage marketplace stores (Amazon, Noon, Jumia) and build high-converting e-commerce experiences.
+          </p>
+
+          <div class="flex flex-wrap gap-3">
+            <a href="#projects" class="btn-anim px-5 py-3 rounded-xl bg-sky-500 text-white font-semibold">View my work</a>
+            <a href="#contact" class="btn-anim px-5 py-3 rounded-xl border border-slate-700 font-semibold">Contact me</a>
           </div>
-          <div class="mt-8 text-sm text-slate-400">
-            <span class="font-semibold text-slate-200">Based in:</span> Tanta, Egypt · <span class="font-semibold text-slate-200">Phone:</span> 01019102966
-          </div>
-        </div>
-        <div class="rounded-3xl p-6 md:p-10 border border-slate-800 bg-slate-800/40" data-aos="fade-left">
-          <div class="grid grid-cols-3 gap-3 text-center">
-            <div class="rounded-2xl p-4 bg-slate-900 border border-slate-700">
-              <p class="text-xs text-slate-400">Platforms</p>
-              <p class="mt-1 font-semibold text-slate-200">Meta • Google • TikTok • Snap • LinkedIn</p>
-            </div>
-            <div class="rounded-2xl p-4 bg-slate-900 border border-slate-700">
-              <p class="text-xs text-slate-400">Goals</p>
-              <p class="mt-1 font-semibold text-slate-200">ROAS↑ • CPA↓ • CTR↑ • AOV↑</p>
-            </div>
-            <div class="rounded-2xl p-4 bg-slate-900 border border-slate-700">
-              <p class="text-xs text-slate-400">Markets</p>
-              <p class="mt-1 font-semibold text-slate-200">Amazon • Noon • Jumia</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- ABOUT -->
-    <section id="about" class="py-16 md:py-24 border-t border-slate-800">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-3 gap-10">
-        <div data-aos="fade-right">
-          <h2 class="text-2xl md:text-3xl font-extrabold tracking-tight">About Me</h2>
-          <p class="mt-3 text-slate-400">Quick overview of who I am and what I do.</p>
-        </div>
-        <div class="md:col-span-2 prose prose-invert max-w-none" data-aos="fade-left">
-          <p><strong>I’m Nasr Shady — a Media Buyer & Growth Marketer</strong> with multi‑industry experience in Fashion, Electronics, Beauty, Health & Fitness, Restaurants, and Consumer Products.</p>
-          <p>I manage and optimize paid campaigns across:</p>
-          <ul>
-            <li>Facebook & Instagram Ads (Meta)</li>
-            <li>Google Ads (Search, Display, Shopping)</li>
-            <li>TikTok Ads</li>
-            <li>Snapchat Ads</li>
-            <li>LinkedIn Ads</li>
-          </ul>
-          <p>I focus on data‑driven strategies to maximize ROAS, reduce CPA, improve CTR/AOV, and ensure accurate tracking with GA4, Pixels, and CAPI.</p>
-          <p>In addition, I specialize in Marketplace Account Management: Amazon, Noon, and Jumia. I also provide <strong>E‑commerce Website Development</strong> and <strong>Custom Media Planning</strong> for any platform.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- SKILLS & TOOLS -->
-    <section id="skills" class="py-16 md:py-24 bg-slate-950 border-y border-slate-800">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-2xl md:text-3xl font-extrabold tracking-tight text-center">Core Skills</h2>
-        <p class="mt-3 text-slate-400 text-center">What I do best.</p>
-        <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div class="p-6 bg-slate-900 rounded-2xl border border-slate-800" data-aos="fade-up"><h3 class="font-semibold">Paid Ads Management</h3><p class="mt-2 text-sm text-slate-400">Meta (Facebook & Instagram), Google Ads, TikTok Ads, Snapchat Ads, LinkedIn Ads.</p></div>
-          <div class="p-6 bg-slate-900 rounded-2xl border border-slate-800" data-aos="fade-up" data-aos-delay="50"><h3 class="font-semibold">Marketplace Account Management</h3><p class="mt-2 text-sm text-slate-400">Amazon, Noon, Jumia — listings, store optimization, PPC campaigns, sales analysis.</p></div>
-          <div class="p-6 bg-slate-900 rounded-2xl border border-slate-800" data-aos="fade-up" data-aos-delay="100"><h3 class="font-semibold">E‑commerce Website Development</h3><p class="mt-2 text-sm text-slate-400">Building stores on Easy Order & Shopify (design, setup, payments, shipping, SEO).</p></div>
-          <div class="p-6 bg-slate-900 rounded-2xl border border-slate-800" data-aos="fade-up" data-aos-delay="150"><h3 class="font-semibold">Conversion Rate Optimization (CRO)</h3><p class="mt-2 text-sm text-slate-400">Landing pages, persuasive copywriting, A/B testing.</p></div>
-          <div class="p-6 bg-slate-900 rounded-2xl border border-slate-800" data-aos="fade-up" data-aos-delay="200"><h3 class="font-semibold">Data Analysis & Tracking</h3><p class="mt-2 text-sm text-slate-400">Google Analytics 4 (GA4), Facebook CAPI, Pixel setup, UTM tracking.</p></div>
-          <div class="p-6 bg-slate-900 rounded-2xl border border-slate-800" data-aos="fade-up" data-aos-delay="250"><h3 class="font-semibold">Strategic Media Planning</h3><p class="mt-2 text-sm text-slate-400">Custom media plans for any platform (Meta, Google, TikTok, Snap, LinkedIn).</p></div>
-        </div>
-
-        <h2 class="mt-16 text-2xl md:text-3xl font-extrabold tracking-tight text-center">Tools & Platforms</h2>
-        <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div class="p-6 bg-slate-900 rounded-2xl border border-slate-800"><h3 class="font-semibold">Meta Business Suite</h3><p class="mt-2 text-sm text-slate-400">Campaigns, ad sets, creatives, A/B tests.</p></div>
-          <div class="p-6 bg-slate-900 rounded-2xl border border-slate-800"><h3 class="font-semibold">Google Ads Manager</h3><p class="mt-2 text-sm text-slate-400">Search • Display • Shopping.</p></div>
-          <div class="p-6 bg-slate-900 rounded-2xl border border-slate-800"><h3 class="font-semibold">TikTok Business Manager</h3><p class="mt-2 text-sm text-slate-400">In‑feed & Spark Ads.</p></div>
-          <div class="p-6 bg-slate-900 rounded-2xl border border-slate-800"><h3 class="font-semibold">Snapchat Ads Manager</h3><p class="mt-2 text-sm text-slate-400">Awareness to conversions.</p></div>
-          <div class="p-6 bg-slate-900 rounded-2xl border border-slate-800"><h3 class="font-semibold">LinkedIn Sales Navigator</h3><p class="mt-2 text-sm text-slate-400">B2B targeting, lead prospecting.</p></div>
-          <div class="p-6 bg-slate-900 rounded-2xl border border-slate-800"><h3 class="font-semibold">Amazon Seller Central</h3><p class="mt-2 text-sm text-slate-400">Listings, PPC, analytics.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROJECTS / CASE STUDIES -->
-    <section id="projects" class="py-16 md:py-24">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex items-end justify-between gap-6" data-aos="fade-up">
-          <div>
-            <h2 class="text-2xl md:text-3xl font-extrabold tracking-tight">Case Studies</h2>
-            <p class="mt-3 text-slate-400">Selected results from recent campaigns (proof available on request).</p>
-          </div>
-          <a href="#contact" class="hidden md:inline-block px-4 py-2 rounded-xl border border-slate-700 font-semibold hover:bg-slate-800 transition">Request full portfolio</a>
-        </div>
-
-        <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <!-- Meta #1 -->
-          <article class="p-6 bg-slate-900 rounded-2xl border border-slate-800" data-aos="fade-up">
-            <div class="flex items-center justify-between gap-4">
-              <h3 class="font-semibold">Meta Ads — Electronics</h3>
-              <span class="text-xs px-2.5 py-1 rounded-full bg-sky-400/10 text-sky-300 ring-1 ring-sky-400/20">2025</span>
-            </div>
-            <ul class="mt-3 list-disc list-inside text-sm text-slate-300">
-              <li>Spend: <strong class="text-white">EGP 3,155.22</strong></li>
-              <li>Purchases: <strong class="text-white">94</strong> · CPA: <strong class="text-white">EGP 33.57</strong></li>
-              <li>Reach: 61,488 · Impressions: 74,916</li>
-            </ul>
-            <p class="mt-3 text-xs text-slate-400">Actions: refined targeting · dynamic creatives · catalog retargeting.</p>
-          </article>
-
-          <!-- Meta #2 -->
-          <article class="p-6 bg-slate-900 rounded-2xl border border-slate-800" data-aos="fade-up" data-aos-delay="100">
-            <div class="flex items-center justify-between gap-4">
-              <h3 class="font-semibold">Meta Ads — Fashion</h3>
-              <span class="text-xs px-2.5 py-1 rounded-full bg-emerald-400/10 text-emerald-300 ring-1 ring-emerald-400/20">2025</span>
-            </div>
-            <ul class="mt-3 list-disc list-inside text-sm text-slate-300">
-              <li>Spend: <strong class="text-white">EGP 2,940.33</strong></li>
-              <li>Purchases: <strong class="text-white">72</strong> · CPA: <strong class="text-white">EGP 40.84</strong></li>
-              <li>ROAS: <strong class="text-white">13.72×</strong> · CPC: EGP 1.94</li>
-              <li>Reach: 46,297 · Impressions: 55,798</li>
-            </ul>
-            <p class="mt-3 text-xs text-slate-400">Actions: lookalike audiences · seasonal offers · A/B creative testing.</p>
-          </article>
-
-          <!-- Google Ads KSA -->
-          <article class="p-6 bg-slate-900 rounded-2xl border border-slate-800" data-aos="fade-up" data-aos-delay="200">
-            <div class="flex items-center justify-between gap-4">
-              <h3 class="font-semibold">Google Ads — Saudi Arabia</h3>
-              <span class="text-xs px-2.5 py-1 rounded-full bg-fuchsia-400/10 text-fuchsia-300 ring-1 ring-fuchsia-400/20">Jan–Mar 2025</span>
-            </div>
-            <ul class="mt-3 list-disc list-inside text-sm text-slate-300">
-              <li>Spend: <strong class="text-white">SAR 335K</strong></li>
-              <li>Conversions: <strong class="text-white">9.59K</strong> · Conv. rate: <strong class="text-white">14.71%</strong></li>
-              <li>ROAS: <strong class="text-white">1,310.84%</strong></li>
-            </ul>
-            <div class="mt-3 flex flex-wrap gap-3">
-              <a href="project-plan-22.pdf" target="_blank" class="px-4 py-2 rounded-xl bg-sky-500 text-white text-sm font-semibold hover:bg-sky-400 transition">Download Google Ads Plan (PDF)</a>
-              <a href="project-plan-22.docx" target="_blank" class="px-4 py-2 rounded-xl border border-slate-700 text-sm font-semibold hover:bg-slate-800 transition">Open DOCX (backup)</a>
-            </div>
-          </article>
-
-          <!-- Salla Store Snapshot -->
-          <article class="p-6 bg-slate-900 rounded-2xl border border-slate-800 md:col-span-2 lg:col-span-3" data-aos="fade-up" data-aos-delay="300">
-            <div class="flex items-center justify-between gap-4">
-              <h3 class="font-semibold">E‑commerce Store (Salla) — July 2025</h3>
-              <span class="text-xs px-2.5 py-1 rounded-full bg-amber-400/10 text-amber-300 ring-1 ring-amber-400/20">KSA</span>
-            </div>
-            <div class="mt-3 grid sm:grid-cols-2 lg:grid-cols-4 gap-4 text-sm text-slate-300">
-              <div class="rounded-xl bg-slate-900 border border-slate-800 p-4"><p class="text-slate-400">Sales</p><p class="font-semibold text-white mt-1">SAR 510,119.92</p></div>
-              <div class="rounded-xl bg-slate-900 border border-slate-800 p-4"><p class="text-slate-400">Orders</p><p class="font-semibold text-white mt-1">691</p></div>
-              <div class="rounded-xl bg-slate-900 border border-slate-800 p-4"><p class="text-slate-400">Visitors</p><p class="font-semibold text-white mt-1">136,765</p></div>
-              <div class="rounded-xl bg-slate-900 border border-slate-800 p-4"><p class="text-slate-400">Monthly Goal</p><p class="font-semibold text-white mt-1">SAR 500,000</p></div>
-            </div>
-            <p class="mt-3 text-xs text-slate-400">Actions: audience scaling · offer testing · catalog optimization · weekly experiments.</p>
-          </article>
-        </div>
-
-        <div class="mt-10 text-center" data-aos="fade-up">
-          <a href="#contact" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-sky-500 text-white font-semibold hover:bg-sky-400 transition">Get a tailored plan for your brand</a>
-          <p class="mt-3 text-xs text-slate-500">*Screenshots are not displayed publicly. Proof available upon request.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- PRICING -->
-    <section id="pricing" class="py-16 md:py-24 bg-slate-950 border-y border-slate-800">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-2xl md:text-3xl font-extrabold tracking-tight text-center text-white" data-aos="zoom-in">Plans & Pricing</h2>
-        <p class="mt-3 text-slate-400 text-center" data-aos="fade-up" data-aos-delay="100">Flexible packages for different business stages.</p>
-        <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div class="p-6 bg-slate-900 rounded-2xl border border-slate-800" data-aos="fade-up">
-            <h3 class="font-semibold text-white">Starter Growth</h3>
-            <p class="mt-2 text-sm text-slate-400">Launch & validate.</p>
-            <p class="mt-4 text-3xl font-extrabold text-white">$70</p>
-            <ul class="mt-4 space-y-2 text-sm text-slate-400">
-              <li>1 platform (Meta or Google)</li>
-              <li>1 campaign structure</li>
-              <li>Basic pixel / GA4 check</li>
-              <li>1 round of creatives</li>
-              <li>Weekly reporting</li>
-            </ul>
-          </div>
-          <div class="p-6 bg-slate-900 rounded-2xl border border-slate-800 ring-2 ring-sky-500/30" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="font-semibold text-white">Pro Scale</h3>
-            <p class="mt-2 text-sm text-slate-400">Optimize & scale.</p>
-            <p class="mt-4 text-3xl font-extrabold text-white">$150</p>
-            <ul class="mt-4 space-y-2 text-sm text-slate-400">
-              <li>2–3 platforms</li>
-              <li>Advanced structure + retargeting</li>
-              <li>GA4 + CAPI setup</li>
-              <li>A/B testing</li>
-              <li>Bi‑weekly reporting</li>
-            </ul>
-          </div>
-          <div class="p-6 bg-slate-900 rounded-2xl border border-slate-800" data-aos="fade-up" data-aos-delay="150">
-            <h3 class="font-semibold text-white">E‑com Booster</h3>
-            <p class="mt-2 text-sm text-emerald-400">Limited Offer: 40% OFF</p>
-            <p class="mt-4 text-3xl font-extrabold text-white line-through">$280</p>
-            <p class="text-2xl font-bold text-emerald-400">$168</p>
-            <ul class="mt-4 space-y-2 text-sm text-slate-400">
-              <li>Multi‑platform + remarketing</li>
-              <li>CRO support (LP + copy)</li>
-              <li>Catalog / Shopping feeds</li>
-              <li>Weekly experiments</li>
-              <li>Weekly reporting</li>
-            </ul>
-          </div>
-          <div class="p-6 bg-slate-900 rounded-2xl border border-slate-800" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="font-semibold text-white">Custom Solution</h3>
-            <p class="mt-2 text-sm text-emerald-400">Limited Offer: 40% OFF</p>
-            <p class="mt-4 text-3xl font-extrabold text-white line-through">From $400</p>
-            <p class="text-2xl font-bold text-emerald-400">From $240</p>
-            <ul class="mt-4 space-y-2 text-sm text-slate-400">
-              <li>Custom media plan for any platform</li>
-              <li>Marketplaces (Amazon/Noon/Jumia)</li>
-              <li>Advanced analytics & attribution</li>
-              <li>Dedicated support</li>
-            </ul>
+          <div class="text-sm text-slate-400">
+            <span class="font-semibold text-slate-200">Based in:</span> Tanta, Egypt ·
+            <span class="font-semibold text-slate-200">Phone:</span> 01019102966
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- EXPERIENCE -->
-    <section id="experience" class="py-16 md:py-24">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-2xl md:text-3xl font-extrabold tracking-tight">Experience & Education</h2>
-        <div class="mt-8 grid md:grid-cols-2 gap-6">
-          <div class="p-6 bg-slate-900 rounded-2xl border border-slate-800">
-            <h3 class="font-semibold">Recent Roles</h3>
-            <ul class="mt-3 text-sm text-slate-400">
-              <li>Media Buyer & Growth Marketer — Freelance</li>
-              <li>E‑commerce Specialist — Marketplaces & Stores</li>
-            </ul>
-          </div>
-          <div class="p-6 bg-slate-900 rounded-2xl border border-slate-800">
-            <h3 class="font-semibold text-white">Education</h3>
-            <ul class="mt-3 space-y-2 text-sm text-slate-400">
-              <li>Business Administration — Delta University</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="py-16 md:py-24 bg-slate-950">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-10">
-        <div data-aos="fade-right">
-          <h2 class="text-2xl md:text-3xl font-extrabold tracking-tight">Let's Connect</h2>
-          <p class="mt-3 text-slate-400">Have a project or looking to scale your performance marketing? I'm open to freelance and contract work.</p>
-          <dl class="mt-8 space-y-2 text-slate-300">
-            <div class="flex gap-2"><dt class="font-semibold">Location:</dt><dd>Tanta, Egypt</dd></div>
-            <div class="flex gap-2"><dt class="font-semibold">Email:</dt><dd><a class="underline" href="mailto:nasrshady990@gmail.com">nasrshady990@gmail.com</a></dd></div>
-            <div class="flex gap-2"><dt class="font-semibold">Phone:</dt><dd><a class="underline" href="tel:+201019102966">01019102966</a></dd></div>
-          </dl>
-          <div class="mt-8 flex gap-3">
-            <a href="mailto:nasrshady990@gmail.com" class="px-5 py-3 rounded-xl bg-sky-500 text-white font-semibold hover:bg-sky-400 transition">Email me</a>
-            <a href="https://wa.me/201019102966" target="_blank" class="px-5 py-3 rounded-xl bg-white/5 ring-1 ring-white/10 font-semibold hover:bg-white/10 transition">WhatsApp</a>
-          </div>
-        </div>
-        <form class="bg-slate-900 text-slate-100 rounded-2xl p-6 border border-slate-800" data-aos="fade-left">
-          <h3 class="font-semibold text-white">Quick Message</h3>
-          <div class="mt-4 grid md:grid-cols-2 gap-4">
-            <input type="text" placeholder="Your name" class="w-full rounded-xl bg-slate-950 border border-slate-800 px-3 py-2 text-slate-200 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500" />
-            <input type="email" placeholder="Your email" class="w-full rounded-xl bg-slate-950 border border-slate-800 px-3 py-2 text-slate-200 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500" />
-          </div>
-          <textarea placeholder="Tell me about your project…" rows="5" class="mt-4 w-full rounded-xl bg-slate-950 border border-slate-800 px-3 py-2 text-slate-200 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-500"></textarea>
-          <button type="button" class="mt-4 w-full px-4 py-3 rounded-xl bg-slate-100 text-slate-900 font-semibold hover:bg-white transition">Send</button>
-          <p class="mt-2 text-xs text-slate-500">(Static demo form for the HTML version)</p>
-        </form>
       </div>
     </section>
   </main>
 
-  <footer class="py-8 border-t border-slate-800">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-      <p class="text-sm text-slate-400">© <span id="year"></span> Nasr Shady. All rights reserved.</p>
-      <a href="#home" class="text-sm text-slate-400 hover:text-slate-200">Back to top ↑</a>
-    </div>
-  </footer>
-
-  <!-- JS -->
+  <!-- AOS Script -->
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
     AOS.init({ once: true, offset: 60, duration: 600, easing: 'ease-out' });
-    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
